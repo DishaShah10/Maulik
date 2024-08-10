@@ -36,6 +36,10 @@ nav .logo {
     font-weight: bold;
 }
 
+nav .logo-img {
+    height: 50px;
+}
+
 nav .nav-links {
     list-style: none;
     display: flex;
@@ -73,7 +77,7 @@ nav .nav-links li a:hover {
 
 /* Home Section */
 .section-home {
-    background: url('home-background.jpg') no-repeat center center/cover;
+    background: url('images/home-background.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 150px 20px;
@@ -113,6 +117,12 @@ nav .nav-links li a:hover {
     font-size: 2.5rem;
 }
 
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 /* Services Section */
 .service-list {
     display: flex;
@@ -134,98 +144,4 @@ nav .nav-links li a:hover {
     transform: scale(1.05);
 }
 
-.service-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-.service-item p {
-    font-size: 1rem;
-}
-
-/* Contact Section */
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-form button:hover {
-    background-color: #ff9800;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-footer .social-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2rem;
-}
-
-footer .social-links a:hover {
-    color: #ff9800;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #333;
-    }
-
-    nav .nav-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .service-list {
-        flex-direction: column;
-    }
-
-    .service-item {
-        margin: 10px auto;
-        flex: 1 1 100%;
-    }
-}
+.servi
