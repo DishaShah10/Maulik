@@ -1,14 +1,17 @@
-document.getElementById("contactForm").addEventListener("submit", function(event){
-    event.preventDefault();
+// Responsive Navbar Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
-    if(name && email && message) {
-        document.getElementById("formMessage").textContent = "Thank you for your message, " + name + "! We will get back to you soon.";
-        document.getElementById("contactForm").reset();
-    } else {
-        document.getElementById("formMessage").textContent = "Please fill out all fields.";
-    }
+// Contact Form Submission (Simple example)
+const contactForm = document.getElementById('contactForm');
+const formMessage = document.getElementById('formMessage');
+
+contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    formMessage.textContent = 'Thank you for contacting us. We will get back to you soon!';
+    contactForm.reset();
 });
